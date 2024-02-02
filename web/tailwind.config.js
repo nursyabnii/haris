@@ -17,10 +17,11 @@ export default {
       colors: {
         primary: '#3b82f6',
         dark: '#0f172a',
+        secondary: '#64748b',
       },
       screens: {
-        '2xl': '1320px'
-      }
+        '2xl': '1320px',
+      },
     },
   },
   plugins: [],
