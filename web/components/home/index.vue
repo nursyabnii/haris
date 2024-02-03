@@ -1,3 +1,4 @@
+import _imports_3 from 'assets/img/controllerproject3.png'
 <template>
     <!-- Hero Section Start -->
     <section id="home" class="pt-36">
@@ -11,7 +12,8 @@
                 </div>
                 <div class="w-full self-end px-4 lg:w-1/2">
                     <div class="relative mt-10">
-                        <img src="assets/img/haris.png" alt="haris" class="max-w-full mx-auto"/>
+                        <!-- <img :src="currentImage" :alt="`haris ${currentIndex + 1}`" class="max-w-full mx-auto"/> -->
+                        <img src="assets/img/haris1.png" alt="haris" class="max-w-full mx-auto"/>
                         <span class="absolute bottom-20 -z-10 left-1/2 -translate-x-1/2 md:scale-125">
                             <svg width="400" height="400" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
                                 <path fill="#3b82f6" d="M47.2,-52.1C61.4,-44.2,73.5,-29.7,77.6,-12.7C81.8,4.2,78,23.6,68.5,38.9C58.9,54.3,43.5,65.8,27.7,68C11.9,70.2,-4.3,63.2,-16.2,54.5C-28.2,45.9,-36,35.6,-41.6,24.6C-47.2,13.7,-50.5,2.1,-50.2,-10.5C-50,-23.1,-46.1,-36.7,-37.1,-45.5C-28.2,-54.3,-14.1,-58.3,1.2,-59.7C16.5,-61.1,32.9,-60,47.2,-52.1Z" transform="translate(100 100) scale(1.1)" />
@@ -24,7 +26,7 @@
     </section>
     <!-- Hero Section End -->
     <!-- About Section Start -->
-    <section id="home" class="pt-36">
+    <section id="about" class="pt-36 pb-32">
         <div class="container">
             <div class="flex flex-wrap">
                 <div class="w-full px-4 mb-10 lg:w-1/2">
@@ -54,4 +56,89 @@
         </div>
     </section>
     <!-- About Section End -->
+
+    <!-- Portofolio Section Start -->
+    <section id="portofolio" class="pt-36 pb-16 bg-slate-100">
+        <div class="container">
+            <div class="w-full px-4">
+                <div class="max-w-xl mx-auto text-center mb-16">
+                    <h4 class="text-primary font-semibold text-lg mb-2">Portofolio</h4>
+                    <h2 class="font-bold text-dark text-3xl mb-4">My Project</h2>
+                    <p class="font-medium text-secondary text-md">The projects I work on include base learning projects and freelance projects. Not only web projects that I work on there are also projects to make games and also make a short film.</p>
+                </div>
+            </div>
+            <div class="w-full px-4 flex flex-wrap justify-center">
+                <div class="mb-12 p-4 md:w-1/2">
+                    <div class="rounded-md shadow-md overflow-hidden">
+                        <img src="assets/img/project1.png" alt="project1" width="w-full">
+                    </div>
+                    <h3 class="font-semibold text-xl text-dark mt-5 mb-3">Dashboard Panel Warga</h3>
+                    <p class="font-medium text-base text-secondary">This is a website that is used to manage RT/RW and as a citizen information system. This website is intended to facilitate the management of citizen data as well as a citizen information system.</p>
+                    <p class="font-mediumtext-xl text-primary mt-5 mb-3">Using Bootstrap and Codeigniter</p>
+                </div>
+                <div class="mb-12 p-4 md:w-1/2">
+                    <div class="rounded-md shadow-md overflow-hidden">
+                        <img src="assets/img/project2.png" alt="project1" width="w-full">
+                    </div>
+                    <h3 class="font-semibold text-xl text-dark mt-5 mb-3">Landing Page Najah Karya Muda</h3>
+                    <p class="font-medium text-base text-secondary">This is a product ordered from our client, namely PT Najah Karya Muda which is engaged in oil resources and services.</p>
+                    <p class="font-mediumtext-xl text-primary mt-5 mb-3">Using Bootstrap</p>
+                </div>
+                <div class="mb-12 p-4 md:w-1/2">
+                    <div class="rounded-md shadow-md overflow-hidden">
+                        <img src="assets/img/project3.png" alt="project1" width="w-full">
+                    </div>
+                    <h3 class="font-semibold text-xl text-dark mt-5 mb-3">Mobile Game Pinball Batara 3D</h3>
+                    <p class="font-medium text-base text-secondary">Pinball Batara 3D is a pinball machine made game3D shape with the concept of an archipelago theme based on Android. Players can play this game with a High Score system.</p>
+                    <p class="font-mediumtext-xl text-primary mt-5 mb-3">Using Unity3D, Blender and Arduino for Controller</p>
+                </div>
+                <div class="mb-12 p-4 md:w-1/2">
+                    <div class="rounded-md shadow-md overflow-hidden">
+                        <img src="assets/img/project4.png" alt="project1" width="w-full">
+                    </div>
+                    <h3 class="font-semibold text-xl text-dark mt-5 mb-3">Short Movie "KEBIASAAN"</h3>
+                    <p class="font-medium text-base text-secondary">The title of the short movie is “Kebiasaan”. This is short movie with comedy genre, tells about the habits of two students.</p>
+                    <a type="button" href="https://youtu.be/9VWbe21ifA0" class="font-mediumtext-xl text-primary mt-5 mb-3">Watch Short Movie Here</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- Portofolio Section End -->
 </template>
+
+<!-- <script>
+export default {
+  data() {
+    return {
+      images: ['haris.png', 'haris1.png', 'haris2.png', 'haris3.png'], // Ganti dengan nama gambar yang Anda miliki
+      currentIndex: 0,
+      intervalId: null
+    };
+  },
+  computed: {
+    currentImage() {
+      return require(`assets/img/${this.images[this.currentIndex]}`);
+    }
+  },
+  mounted() {
+    this.startSlideshow();
+  },
+  beforeDestroy() {
+    this.stopSlideshow();
+  },
+  methods: {
+    startSlideshow() {
+      this.intervalId = setInterval(() => {
+        this.nextImage();
+      }, 3000); // Ubah angka ini untuk mengatur interval slide (dalam milidetik)
+    },
+    stopSlideshow() {
+      clearInterval(this.intervalId);
+    },
+    nextImage() {
+      this.currentIndex = (this.currentIndex + 1) % this.images.length;
+    }
+  }
+};
+</script> -->
