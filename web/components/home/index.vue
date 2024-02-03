@@ -1,14 +1,13 @@
-import _imports_3 from 'assets/img/controllerproject3.png'
 <template>
     <!-- Hero Section Start -->
-    <section id="home" class="pt-36">
+    <section id="home" class="pt-36 lg:pt-8 lg:scroll-smooth">
         <div class="container">
             <div class="flex flex-wrap">
                 <div class="w-full self-center px-4 lg:w-1/2">
                     <h1 class="text-base font-semibold text-primary md:text-xl lg:mt-9 lg:right-0">Hello Everyone 👋, Saya <span class="block font-bold text-dark text-4xl">Muhammad Nur Sya'bani Haris</span> </h1>
                     <h2 class="font-medium text-secondary text-lg mb-5 lg:text-2xl">Web Developer & <span class="text-dark">Unity Programmer</span></h2>
                     <p class="font-medium text-secondary mb-10 leading-relaxed">Learning web programming & unity programming is easy and fun, <span class="text-dark font-bold">isn't it!</span></p>
-                    <a href="#" class="text-base font-semibold bg-primary text-white py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out">Contact Me</a>
+                    <a href="#contact" class="text-base font-semibold bg-primary text-white py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out">Contact Me</a>
                 </div>
                 <div class="w-full self-end px-4 lg:w-1/2">
                     <div class="relative mt-10">
@@ -26,7 +25,7 @@ import _imports_3 from 'assets/img/controllerproject3.png'
     </section>
     <!-- Hero Section End -->
     <!-- About Section Start -->
-    <section id="about" class="pt-36 pb-32">
+    <section id="about" class="pt-36 pb-32 lg:scroll-smooth">
         <div class="container">
             <div class="flex flex-wrap">
                 <div class="w-full px-4 mb-10 lg:w-1/2">
@@ -58,23 +57,23 @@ import _imports_3 from 'assets/img/controllerproject3.png'
     <!-- About Section End -->
 
     <!-- Portofolio Section Start -->
-    <section id="portofolio" class="pt-36 pb-16 bg-slate-100">
+    <section id="portofolio" class="pt-36 pb-16 bg-slate-100 lg:scroll-smooth">
         <div class="container">
             <div class="w-full px-4">
                 <div class="max-w-xl mx-auto text-center mb-16">
-                    <h4 class="text-primary font-semibold text-lg mb-2">Portofolio</h4>
-                    <h2 class="font-bold text-dark text-3xl mb-4">My Project</h2>
-                    <p class="font-medium text-secondary text-md">The projects I work on include base learning projects and freelance projects. Not only web projects that I work on there are also projects to make games and also make a short film.</p>
+                    <h4 class="text-primary font-semibold text-lg mb-2 sm:text-lg lg:text-3xl">Portofolio</h4>
+                    <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl">My Project</h2>
+                    <p class="font-medium text-secondary text-md md:text-lg">The projects I work on include base learning projects and freelance projects. Not only web projects that I work on there are also projects to make games and also make a short film.</p>
                 </div>
             </div>
-            <div class="w-full px-4 flex flex-wrap justify-center">
+            <div class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto">
                 <div class="mb-12 p-4 md:w-1/2">
                     <div class="rounded-md shadow-md overflow-hidden">
                         <img src="assets/img/project1.png" alt="project1" width="w-full">
                     </div>
                     <h3 class="font-semibold text-xl text-dark mt-5 mb-3">Dashboard Panel Warga</h3>
                     <p class="font-medium text-base text-secondary">This is a website that is used to manage RT/RW and as a citizen information system. This website is intended to facilitate the management of citizen data as well as a citizen information system.</p>
-                    <p class="font-mediumtext-xl text-primary mt-5 mb-3">Using Bootstrap and Codeigniter</p>
+                    <p class="font-mediumtext-xl text-primary mt-5 mb-3">Using Bootstrap, Codeigniter and MySQL</p>
                 </div>
                 <div class="mb-12 p-4 md:w-1/2">
                     <div class="rounded-md shadow-md overflow-hidden">
@@ -105,33 +104,137 @@ import _imports_3 from 'assets/img/controllerproject3.png'
 
     </section>
     <!-- Portofolio Section End -->
+
+    <!-- Clients Section Start -->
+    <section id="clients" class="pt-36 pb-32 bg-slate-800">
+        <div class="container">
+            <div class="w-full px-4">
+                <div class="max-w-xl mx-auto text-center mb-16">
+                    <h4 class="text-primary font-semibold text-lg mb-2 sm:text-lg lg:text-3xl">Clients</h4>
+                    <h2 class="font-bold text-white text-3xl mb-4 sm:text-4xl lg:text-5xl">My Cooperation</h2>
+                    <p class="font-medium text-white text-md md:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus dignissimos ut molestiae, neque tenetur iste repellendus commodi vitae modi suscipit..</p>
+                </div>
+            </div>
+            <div class="w-full px-4">
+                <div class="flex flex-wrap item-center justify-center">
+                    <a href="#" class="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opcacity-100 lg:mx-6 xl:mx-8">
+                        <img src="assets/img/polibatam.png" alt="polibatam">
+                    </a>
+                    <a href="#" class="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opcacity-100 lg:mx-6 xl:mx-8">
+                        <img src="assets/img/trm.png" alt="trm">
+                    </a>
+                    <a href="#" class="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opcacity-100 lg:mx-6 xl:mx-8">
+                        <img src="assets/img/alcon.png" alt="alcon" class="rounded-full">
+                    </a>
+                    <a href="#" class="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opcacity-100 lg:mx-6 xl:mx-8">
+                        <img src="assets/img/nkm.png" alt="nkm">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Clients Section End -->
+
+    <!-- Blog Section Start -->
+    <section id="blog" class="pt-36 pb-32 bg-slate-100">
+        <div class="w-full px-4">
+            <div class="max-w-xl mx-auto text-center mb-16">
+                <h4 class="text-primary font-semibold text-lg mb-2 sm:text-lg lg:text-3xl">Blog</h4>
+                <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl">New Information</h2>
+                <p class="font-medium text-secondary text-md md:text-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut commodi dolores incidunt quos necessitatibus saepe.</p>
+            </div>
+        </div>
+
+        <div class="flex flex-wrap">
+            <div class="w-full px-4 lg:w-1/2 xl:w-1/3" >
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
+                    <img src="https://source.unsplash.com/360x200?figma" alt="figma" class="w-full" />
+                    <div class="py-8 px-6">
+                        <h3>
+                            <a href="#" class="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate">Tips Belajar Figma</a>
+                        </h3>
+                        <p class="font-medium text-base text-secondary mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, quisquam.</p>
+                        <a href="#" class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80">View More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full px-4 lg:w-1/2 xl:w-1/3" >
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
+                    <img src="https://source.unsplash.com/360x200?unity-3d" alt="ctf" class="w-full" />
+                    <div class="py-8 px-6">
+                        <h3>
+                            <a href="#" class="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate">Tips Belajar Unity 3D</a>
+                        </h3>
+                        <p class="font-medium text-base text-secondary mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, natus.</p>
+                        <a href="#" class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80">View More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full px-4 lg:w-1/2 xl:w-1/3" >
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
+                    <img src="https://source.unsplash.com/360x200?web" alt="web" class="w-full" />
+                    <div class="py-8 px-6">
+                        <h3>
+                            <a href="#" class="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate">Tips Belajar Web</a>
+                        </h3>
+                        <p class="font-medium text-base text-secondary mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum reprehenderit atque aut.</p>
+                        <a href="#" class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80">View More</a>
+                    </div>
+                </div>
+            </div>
+                
+        </div>
+    </section>
+    <!-- Blog Section End -->
+
+    <!-- Contact Section Start -->
+    <section id="contact" class="pt-36 pb-32">
+        <div class="container">
+            <div class="w-full px-4">
+                <div class="max-w-xl mx-auto text-center mb-16">
+                <h4 class="text-primary font-semibold text-lg mb-2 sm:text-lg lg:text-3xl">Contact</h4>
+                <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl">Contact Me</h2>
+                <p class="font-medium text-secondary text-md md:text-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut commodi dolores incidunt quos necessitatibus saepe.</p>
+            </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section End -->
 </template>
 
 <!-- <script>
 export default {
   data() {
     return {
-      images: ['haris.png', 'haris1.png', 'haris2.png', 'haris3.png'], // Ganti dengan nama gambar yang Anda miliki
+      images: ['haris.png', 'haris1.png', 'haris2.png', 'haris3.png'],
       currentIndex: 0,
-      intervalId: null
+      intervalId: null,
+      loadedImages: []
     };
   },
   computed: {
     currentImage() {
-      return require(`assets/img/${this.images[this.currentIndex]}`);
+      return this.loadedImages[this.currentIndex];
     }
   },
   mounted() {
+    this.loadImages();
     this.startSlideshow();
   },
   beforeDestroy() {
     this.stopSlideshow();
   },
   methods: {
+    async loadImages() {
+      for (const imageName of this.images) {
+        const image = await import(`assets/img/${imageName}`);
+        this.loadedImages.push(image.default);
+      }
+    },
     startSlideshow() {
       this.intervalId = setInterval(() => {
         this.nextImage();
-      }, 3000); // Ubah angka ini untuk mengatur interval slide (dalam milidetik)
+      }, 3000);
     },
     stopSlideshow() {
       clearInterval(this.intervalId);
