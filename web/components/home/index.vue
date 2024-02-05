@@ -11,8 +11,7 @@
                 </div>
                 <div class="w-full self-end px-4 lg:w-1/2">
                     <div class="relative mt-10">
-                        <!-- <img :src="currentImage" :alt="`haris ${currentIndex + 1}`" class="max-w-full mx-auto"/> -->
-                        <img src="assets/img/haris1.png" alt="haris" class="max-w-full mx-auto"/>
+                        <img :src="currentImage" :alt="`haris${currentIndex + 1}`" class="max-w-full mx-auto"/>
                         <span class="absolute bottom-20 -z-10 left-1/2 -translate-x-1/2 md:scale-125">
                             <svg width="400" height="400" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
                                 <path fill="#3b82f6" d="M47.2,-52.1C61.4,-44.2,73.5,-29.7,77.6,-12.7C81.8,4.2,78,23.6,68.5,38.9C58.9,54.3,43.5,65.8,27.7,68C11.9,70.2,-4.3,63.2,-16.2,54.5C-28.2,45.9,-36,35.6,-41.6,24.6C-47.2,13.7,-50.5,2.1,-50.2,-10.5C-50,-23.1,-46.1,-36.7,-37.1,-45.5C-28.2,-54.3,-14.1,-58.3,1.2,-59.7C16.5,-61.1,32.9,-60,47.2,-52.1Z" transform="translate(100 100) scale(1.1)" />
@@ -190,47 +189,60 @@
     <!-- Contact Section Start -->
     <section id="contact" class="pt-36 pb-32">
         <div class="container">
-            <div class="w-full px-4">
-                <div class="max-w-xl mx-auto text-center mb-16">
-                <h4 class="text-primary font-semibold text-lg mb-2 sm:text-lg lg:text-3xl">Contact</h4>
-                <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl">Contact Me</h2>
-                <p class="font-medium text-secondary text-md md:text-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut commodi dolores incidunt quos necessitatibus saepe.</p>
-            </div>
+            <div class="w-full lg:w-2/3 lg:mx-auto">
+                <div class="w-full px-4">
+                    <div class="max-w-xl mx-auto text-center mb-16">
+                        <h4 class="text-primary font-semibold text-lg mb-2 sm:text-lg lg:text-3xl">Contact</h4>
+                        <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl">Contact Me</h2>
+                        <p class="font-medium text-secondary text-md md:text-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut commodi dolores incidunt quos necessitatibus saepe.</p>
+                    </div>
+                </div>
+
+                <form>
+                    <div class="w-full px-6 mb-8">
+                        <label for="name" class="text-base font-bold text-primary">Name</label>
+                        <input type="text" id="name" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary" />
+                    </div>
+                    <div class="w-full px-6 mb-8">
+                        <label for="email" class="text-base font-bold text-primary">Email</label>
+                        <input type="email" id="email" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary" />
+                    </div>
+                    <div class="w-full px-6 mb-8">
+                        <label for="message" class="text-base font-bold text-primary">Message</label>
+                        <textarea type="email" id="email" class="w-full  bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary head"></textarea>
+                    </div>
+
+                    <div class="w-full px-4">
+                        <button type="button" class="text-base bg-primary rounded-full font-semibold text-white py-3 px-8 w-full hover:opacity-80 hover:shadow-lg duration-500 x">Send</button>
+                    </div>
+                </form>
             </div>
         </div>
     </section>
     <!-- Contact Section End -->
 </template>
 
-<!-- <script>
+<script>
 export default {
   data() {
     return {
       images: ['haris.png', 'haris1.png', 'haris2.png', 'haris3.png'],
       currentIndex: 0,
       intervalId: null,
-      loadedImages: []
     };
   },
   computed: {
     currentImage() {
-      return this.loadedImages[this.currentIndex];
+        return `/img/${this.images[this.currentIndex]}`
     }
   },
   mounted() {
-    this.loadImages();
     this.startSlideshow();
   },
   beforeDestroy() {
     this.stopSlideshow();
   },
   methods: {
-    async loadImages() {
-      for (const imageName of this.images) {
-        const image = await import(`assets/img/${imageName}`);
-        this.loadedImages.push(image.default);
-      }
-    },
     startSlideshow() {
       this.intervalId = setInterval(() => {
         this.nextImage();
@@ -244,4 +256,4 @@ export default {
     }
   }
 };
-</script> -->
+</script>
