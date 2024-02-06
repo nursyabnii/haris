@@ -1,18 +1,24 @@
 <template>
+    <html class="scroll-smooth" lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Muhammad Nur Sya'bani Haris</title>
+    </head>
     <!-- Hero Section Start -->
-    <section id="home" class="pt-36 lg:pt-8 lg:scroll-smooth">
+    <section id="home" class="pt-36 lg:pt-8 dark:bg-dark">
         <div class="container">
             <div class="flex flex-wrap">
                 <div class="w-full self-center px-4 lg:w-1/2">
-                    <h1 class="text-base font-semibold text-primary md:text-xl lg:mt-9 lg:right-0">Hello Everyone 👋, Saya <span class="block font-bold text-dark text-4xl">Muhammad Nur Sya'bani Haris</span> </h1>
-                    <h2 class="font-medium text-secondary text-lg mb-5 lg:text-2xl">Web Developer & <span class="text-dark">Unity Programmer</span></h2>
-                    <p class="font-medium text-secondary mb-10 leading-relaxed">Learning web programming & unity programming is easy and fun, <span class="text-dark font-bold">isn't it!</span></p>
+                    <h1 class="text-base font-semibold text-primary md:text-xl lg:mt-9 lg:right-0">Hello Everyone 👋, Saya <span class="block font-bold text-dark text-4xl dark:text-white">Muhammad Nur Sya'bani Haris</span> </h1>
+                    <h2 class="font-medium text-secondary text-lg mb-5 lg:text-2xl">Web Developer & <span class="text-dark dark:text-white">Unity Programmer</span></h2>
+                    <p class="font-medium text-secondary mb-10 leading-relaxed">Learning web programming & unity programming is easy and fun, <span class="text-dark font-bold dark:text-white">isn't it!</span></p>
                     <a href="#contact" class="text-base font-semibold bg-primary text-white py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out">Contact Me</a>
                 </div>
                 <div class="w-full self-end px-4 lg:w-1/2">
                     <div class="relative mt-10">
-                        <img :src="currentImage" :alt="`haris${currentIndex + 1}`" class="max-w-full mx-auto"/>
-                        <span class="absolute bottom-20 -z-10 left-1/2 -translate-x-1/2 md:scale-125">
+                        <img :src="currentImage" :alt="`haris${currentIndex + 1}`" class="relative z-10 max-w-full mx-auto"/>
+                        <span class="absolute bottom-20 left-1/2 -translate-x-1/2 md:scale-125">
                             <svg width="400" height="400" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
                                 <path fill="#3b82f6" d="M47.2,-52.1C61.4,-44.2,73.5,-29.7,77.6,-12.7C81.8,4.2,78,23.6,68.5,38.9C58.9,54.3,43.5,65.8,27.7,68C11.9,70.2,-4.3,63.2,-16.2,54.5C-28.2,45.9,-36,35.6,-41.6,24.6C-47.2,13.7,-50.5,2.1,-50.2,-10.5C-50,-23.1,-46.1,-36.7,-37.1,-45.5C-28.2,-54.3,-14.1,-58.3,1.2,-59.7C16.5,-61.1,32.9,-60,47.2,-52.1Z" transform="translate(100 100) scale(1.1)" />
                             </svg>
@@ -24,16 +30,16 @@
     </section>
     <!-- Hero Section End -->
     <!-- About Section Start -->
-    <section id="about" class="pt-36 pb-32 lg:scroll-smooth">
+    <section id="about" class="pt-36 pb-32 dark:bg-dark">
         <div class="container">
             <div class="flex flex-wrap">
                 <div class="w-full px-4 mb-10 lg:w-1/2">
                     <h4 class="font-bold uppercase text-primary text-lg mb-3">About Me</h4>
-                    <h2 class="font-bold text-dark text-3xl mb-5 max-w-md lg:text-4xl">Learning is beautiful</h2>
+                    <h2 class="font-bold text-dark text-3xl mb-5 max-w-md lg:text-4xl dark:text-white">Learning is beautiful</h2>
                     <p class="font-medium text-base text-secondary max-w-xl lg:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus incidunt, iusto repellat id laboriosam saepe, quas voluptates, exercitationem vel labore cumque officia sed aliquid reiciendis? Voluptatum, enim placeat. Eius, adipisci.</p>
                 </div>
                 <div class="w-full px-4 lg:w-1/2">
-                    <h3 class="font-semibold uppercase text-dark text-2xl mb-4 lg:text-3xl lg:pt-10">Let's be friends</h3>
+                    <h3 class="font-semibold uppercase text-dark text-2xl mb-4 lg:text-3xl lg:pt-10 dark:text-white">Let's be friends</h3>
                     <p class="font-medium text-base text-secondary mb-6 lg:text-lg">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut aperiam non neque labore quae, quam, eveniet recusandae, provident repellat quasi maiores natus. Quos at, possimus officia deleniti beatae veniam nulla!</p>
                     <div class="flex items-center">
                         <!-- Instagram -->
@@ -56,12 +62,12 @@
     <!-- About Section End -->
 
     <!-- Portofolio Section Start -->
-    <section id="portofolio" class="pt-36 pb-16 bg-slate-100 lg:scroll-smooth">
+    <section id="portofolio" class="pt-36 pb-16 bg-slate-100 lg:scroll-smooth dark:bg-slate-800">
         <div class="container">
             <div class="w-full px-4">
                 <div class="max-w-xl mx-auto text-center mb-16">
                     <h4 class="text-primary font-semibold text-lg mb-2 sm:text-lg lg:text-3xl">Portofolio</h4>
-                    <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl">My Project</h2>
+                    <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl dark:text-white">My Project</h2>
                     <p class="font-medium text-secondary text-md md:text-lg">The projects I work on include base learning projects and freelance projects. Not only web projects that I work on there are also projects to make games and also make a short film.</p>
                 </div>
             </div>
@@ -70,7 +76,7 @@
                     <div class="rounded-md shadow-md overflow-hidden">
                         <img src="assets/img/project1.png" alt="project1" width="w-full">
                     </div>
-                    <h3 class="font-semibold text-xl text-dark mt-5 mb-3">Dashboard Panel Warga</h3>
+                    <h3 class="font-semibold text-xl text-dark mt-5 mb-3 dark:text-white">Dashboard Panel Warga</h3>
                     <p class="font-medium text-base text-secondary">This is a website that is used to manage RT/RW and as a citizen information system. This website is intended to facilitate the management of citizen data as well as a citizen information system.</p>
                     <p class="font-mediumtext-xl text-primary mt-5 mb-3">Using Bootstrap, Codeigniter and MySQL</p>
                 </div>
@@ -78,7 +84,7 @@
                     <div class="rounded-md shadow-md overflow-hidden">
                         <img src="assets/img/project2.png" alt="project1" width="w-full">
                     </div>
-                    <h3 class="font-semibold text-xl text-dark mt-5 mb-3">Landing Page Najah Karya Muda</h3>
+                    <h3 class="font-semibold text-xl text-dark mt-5 mb-3 dark:text-white">Landing Page Najah Karya Muda</h3>
                     <p class="font-medium text-base text-secondary">This is a product ordered from our client, namely PT Najah Karya Muda which is engaged in oil resources and services.</p>
                     <p class="font-mediumtext-xl text-primary mt-5 mb-3">Using Bootstrap</p>
                 </div>
@@ -86,15 +92,15 @@
                     <div class="rounded-md shadow-md overflow-hidden">
                         <img src="assets/img/project3.png" alt="project1" width="w-full">
                     </div>
-                    <h3 class="font-semibold text-xl text-dark mt-5 mb-3">Mobile Game Pinball Batara 3D</h3>
+                    <h3 class="font-semibold text-xl text-dark mt-5 mb-3 dark:text-white">Mobile Game Pinball Batara 3D</h3>
                     <p class="font-medium text-base text-secondary">Pinball Batara 3D is a pinball machine made game3D shape with the concept of an archipelago theme based on Android. Players can play this game with a High Score system.</p>
                     <p class="font-mediumtext-xl text-primary mt-5 mb-3">Using Unity3D, Blender and Arduino for Controller</p>
                 </div>
                 <div class="mb-12 p-4 md:w-1/2">
-                    <div class="rounded-md shadow-md overflow-hidden">
+                    <div class="rounded-md shadow-md overflow-hidden ">
                         <img src="assets/img/project4.png" alt="project1" width="w-full">
                     </div>
-                    <h3 class="font-semibold text-xl text-dark mt-5 mb-3">Short Movie "KEBIASAAN"</h3>
+                    <h3 class="font-semibold text-xl text-dark mt-5 mb-3 dark:text-white">Short Movie "KEBIASAAN"</h3>
                     <p class="font-medium text-base text-secondary">The title of the short movie is “Kebiasaan”. This is short movie with comedy genre, tells about the habits of two students.</p>
                     <a type="button" href="https://youtu.be/9VWbe21ifA0" class="font-mediumtext-xl text-primary mt-5 mb-3">Watch Short Movie Here</a>
                 </div>
@@ -105,12 +111,12 @@
     <!-- Portofolio Section End -->
 
     <!-- Clients Section Start -->
-    <section id="clients" class="pt-36 pb-32 bg-slate-800">
+    <section id="clients" class="pt-36 pb-32 bg-slate-800 dark:bg-slate-300">
         <div class="container">
             <div class="w-full px-4">
                 <div class="max-w-xl mx-auto text-center mb-16">
                     <h4 class="text-primary font-semibold text-lg mb-2 sm:text-lg lg:text-3xl">Clients</h4>
-                    <h2 class="font-bold text-white text-3xl mb-4 sm:text-4xl lg:text-5xl">My Cooperation</h2>
+                    <h2 class="font-bold text-white text-3xl mb-4 sm:text-4xl lg:text-5xl dark:text-dark">My Cooperation</h2>
                     <p class="font-medium text-white text-md md:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus dignissimos ut molestiae, neque tenetur iste repellendus commodi vitae modi suscipit..</p>
                 </div>
             </div>
@@ -135,22 +141,22 @@
     <!-- Clients Section End -->
 
     <!-- Blog Section Start -->
-    <section id="blog" class="pt-36 pb-32 bg-slate-100">
+    <section id="blog" class="pt-36 pb-32 bg-slate-100 dark:bg-dark">
         <div class="w-full px-4">
             <div class="max-w-xl mx-auto text-center mb-16">
                 <h4 class="text-primary font-semibold text-lg mb-2 sm:text-lg lg:text-3xl">Blog</h4>
-                <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl">New Information</h2>
+                <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl dark:text-white">New Information</h2>
                 <p class="font-medium text-secondary text-md md:text-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut commodi dolores incidunt quos necessitatibus saepe.</p>
             </div>
         </div>
 
         <div class="flex flex-wrap">
             <div class="w-full px-4 lg:w-1/2 xl:w-1/3" >
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10 dark:bg-slate-800">
                     <img src="https://source.unsplash.com/360x200?figma" alt="figma" class="w-full" />
                     <div class="py-8 px-6">
                         <h3>
-                            <a href="#" class="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate">Tips Belajar Figma</a>
+                            <a href="#" class="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate dark:text-white">Tips Belajar Figma</a>
                         </h3>
                         <p class="font-medium text-base text-secondary mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, quisquam.</p>
                         <a href="#" class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80">View More</a>
@@ -158,11 +164,11 @@
                 </div>
             </div>
             <div class="w-full px-4 lg:w-1/2 xl:w-1/3" >
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10 dark:bg-slate-800">
                     <img src="https://source.unsplash.com/360x200?unity-3d" alt="ctf" class="w-full" />
                     <div class="py-8 px-6">
                         <h3>
-                            <a href="#" class="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate">Tips Belajar Unity 3D</a>
+                            <a href="#" class="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate dark:text-white">Tips Belajar Unity 3D</a>
                         </h3>
                         <p class="font-medium text-base text-secondary mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, natus.</p>
                         <a href="#" class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80">View More</a>
@@ -170,13 +176,13 @@
                 </div>
             </div>
             <div class="w-full px-4 lg:w-1/2 xl:w-1/3" >
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10 dark:bg-slate-800">
                     <img src="https://source.unsplash.com/360x200?web" alt="web" class="w-full" />
                     <div class="py-8 px-6">
                         <h3>
-                            <a href="#" class="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate">Tips Belajar Web</a>
+                            <a href="#" class="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate dark:text-white">Tips Belajar Web</a>
                         </h3>
-                        <p class="font-medium text-base text-secondary mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum reprehenderit atque aut.</p>
+                        <p class="font-medium text-base text-secondary mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                         <a href="#" class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80">View More</a>
                     </div>
                 </div>
@@ -187,13 +193,13 @@
     <!-- Blog Section End -->
 
     <!-- Contact Section Start -->
-    <section id="contact" class="pt-36 pb-32">
+    <section id="contact" class="pt-36 pb-32 dark:bg-slate-800">
         <div class="container">
             <div class="w-full lg:w-2/3 lg:mx-auto">
                 <div class="w-full px-4">
                     <div class="max-w-xl mx-auto text-center mb-16">
                         <h4 class="text-primary font-semibold text-lg mb-2 sm:text-lg lg:text-3xl">Contact</h4>
-                        <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl">Contact Me</h2>
+                        <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl dark:text-white">Contact Me</h2>
                         <p class="font-medium text-secondary text-md md:text-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut commodi dolores incidunt quos necessitatibus saepe.</p>
                     </div>
                 </div>
@@ -220,6 +226,11 @@
         </div>
     </section>
     <!-- Contact Section End -->
+
+    <!-- Back To Top Start -->
+    <a href="#home" id="to-top" class=" hidden h-14 w-14 bg-primary rounded-full items-center justify-center fixed z-[9999] bottom-4 right-4 p-4 hover:animate-pulse "><span class="block h-5 w-5 border-t-2 border-l-2 rotate-45 mt-2"></span></a>
+    <!-- Back To Top End -->
+    </html>
 </template>
 
 <script>
@@ -238,7 +249,31 @@ export default {
   },
   mounted() {
     this.startSlideshow();
+
+    window.onscroll = function() {
+      const header = document.querySelector('header');
+      const fixedNav = header.offsetTop;
+      const toTop = document.querySelector('#to-top');
+
+      if (window.pageYOffset > fixedNav) {
+        header.classList.add('navbar-fixed');
+        toTop.classList.remove('hidden');
+        toTop.classList.add('flex');
+      } else {
+        header.classList.remove('navbar-fixed');
+        toTop.classList.remove('flex');
+        toTop.classList.add('hidden');
+      }
+    };
+
+    // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark')
+    } else {
+        document.documentElement.classList.remove('dark')
+    }
   },
+
   beforeDestroy() {
     this.stopSlideshow();
   },
