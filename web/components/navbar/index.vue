@@ -2,7 +2,7 @@
     <header class="bg-transparent navbar-fixed top-0 left-0 w-full flex items-center z-10">
         <div class="container">
             <div class="flex items-center justify-between relative">
-                <div class="px-4">
+                <div>
                     <a href="#home" class="font-bold text-lg text-primary block py-6">Nursyabani</a>
                 </div>
                 <div class="px-4">
